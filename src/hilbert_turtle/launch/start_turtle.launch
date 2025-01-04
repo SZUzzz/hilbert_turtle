@@ -1,0 +1,8 @@
+<launch>
+    <node pkg="turtlesim" type="turtlesim_node" name="turtle" output="screen" />
+    <node pkg="turtlesim" type="turtle_teleop_key" name="key" output="screen" />
+    <node pkg="hilbert_turtle" type="spawn_turtle" name="spwan" output="screen" />
+    <node pkg="hilbert_turtle" type="print_pose" name="print" output="screen" />
+    <node pkg="hilbert_turtle" type="hilbertile_turtle" name="hiber" output="screen" />
+    <!-- <node pkg="hilbert_turtle" type="follow" name="fol1" output="screen" /> -->
+</launch>

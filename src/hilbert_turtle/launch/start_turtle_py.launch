@@ -1,0 +1,14 @@
+<!-- hilbert_turtles.launch -->
+<launch>
+    <!-- 启动 turtlesim_node 节点 -->
+    <node pkg="turtlesim" type="turtlesim_node" name="turtle" output="screen" />
+    
+    <!-- 启动 Hilbert spawn Python 脚本 -->
+    <node pkg="hilbert_turtle" type="spawn_turtle.py" name="spawn_py" output="screen" />
+
+    <!-- 启动 Hilbert 曲线 Python 脚本 -->
+    <node pkg="hilbert_turtle" type="hilbertile_turtle.py" name="hilbert" output="screen" />
+
+    <!-- 启动 Hilbert color Python 脚本 -->
+    <node pkg="hilbert_turtle" type="print_pose.py" name="poseprint" output="screen" />
+</launch>
